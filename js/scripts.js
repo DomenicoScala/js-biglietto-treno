@@ -23,22 +23,22 @@ console.log('EtaInNumber', EtaInNumber, typeof EtaInNumber)
 
     const scontoPrezzo = prezzo - ((prezzo / 100) * 20)
     console.log('scontoPrezzo' , scontoPrezzo, typeof scontoPrezzo)
-    document.querySelector('#result-container').innerHTML = 'Il prezzo del biglietto è €' + scontoPrezzo;
+    document.querySelector('#result-container').innerHTML = 'Il prezzo del biglietto è €' + scontoPrezzo.toFixed(2);
  }
 
- if (EtaInNumber > 65){
+else if (EtaInNumber > 65){
     /* CALCOLO PREZZO BASE */
     const prezzo = (kmInNumber * 0.21)
 
     const scontoPrezzo = prezzo - ((prezzo / 100) * 40)
     console.log('scontoPrezzo' , scontoPrezzo, typeof scontoPrezzo)
-    document.querySelector('#result-container').innerHTML = 'Il prezzo del biglietto è €' + scontoPrezzo;
+    document.querySelector('#result-container').innerHTML = 'Il prezzo del biglietto è €' + scontoPrezzo.toFixed(2);
  }
  
 /* ALTRIMENTI */
  else{
     const prezzo = (kmInNumber * 0.21)
     console.log('prezzo', prezzo, typeof prezzo)
-    document.querySelector('#result-container').innerHTML = 'Il prezzo del biglietto è €' + prezzo;
+    document.querySelector('#result-container').innerHTML = 'Il prezzo del biglietto è €' + prezzo.toFixed(2);
  }
  
